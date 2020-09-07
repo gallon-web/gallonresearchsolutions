@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallon Research Solutions</title>
+    <link
+      rel="icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Bootstrap css-->
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!--Propeller css-->
+    <link
+      rel="stylesheet"
+      href="assets/css/propeller.min.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!--Owl Carousel css-->
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.carousel.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!--Quantify css-->
+    <link
+      rel="stylesheet"
+      href="assets/css/quantify-theme.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/quantify.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/appstyle.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div class="showbox" id="preloader">
+      <div class="loader">
+        <div align="center" class="fond">
+          <div class="contener_general">
+            <div class="contener_mixte">
+              <div class="ballcolor ball_1">&nbsp;</div>
+            </div>
+            <div class="contener_mixte">
+              <div class="ballcolor ball_2">&nbsp;</div>
+            </div>
+            <div class="contener_mixte">
+              <div class="ballcolor ball_3">&nbsp;</div>
+            </div>
+            <div class="contener_mixte">
+              <div class="ballcolor ball_4">&nbsp;</div>
+            </div>
+          </div>
+          <p class="loading-text">Loading...</p>
+        </div>
+      </div>
+    </div>
+    <!-- loder end -->
+    <nav
+      class="navbar navbar-inverse navbar-fixed-top pmd-navbar primary-navbar"
+      style="background-color: #fff; box-shadow: 1px 2px #b3b2b2"
+    >
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            class="pmd-ripple-effect navbar-toggle pmd-navbar-toggle"
+            type="button"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" title="" href="index.html">
+            <img
+              class="logo-dark"
+              src="assets/img/logo_Gallon/logo-gallon.png"
+              alt="Gallon Logo"
+            />
+            <img
+              class="logo-light"
+              src="assets/img/logo_Gallon/logo-gallon.png"
+              alt="Gallon Logo"
+            />
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+          id="bs-example-navbar-collapse-1"
+          class="collapse navbar-collapse pmd-navbar-sidebar"
+        >
+          <!--Navbar Search -->
+          <div class="pmd-navbar-right-icon pull-right" style="display: none">
+            <a
+              class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect search-toggle"
+              href="javascript:void(0);"
+            >
+              <!--<i class="material-icons md-dark pmd-sm pmd-svg-icon">search</i>-->
+              <i class="material-icons md-dark pmd-sm pmd-svg-icon">close</i>
+            </a>
+            <form class="search-form" method="get" id="searchform">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Search"
+                  placeholder="Search"
+                />
+              </div>
+            </form>
+          </div>
+          <!--End Navbar Search -->
+          <!-- Navbar Right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a style="color: #000" href="/index.html">Home</a></li>
+            <li>
+              <a style="color: rgb(228, 117, 13)" href="/aboutus.html"
+                >Aboutus</a
+              >
+            </li>
+            <li><a style="color: #000" href="/services.html">Services</a></li>
+            <li><a style="color: #000" href="/careers.html">Careers</a></li>
+
+            <li>
+              <a style="color: #000" href="/contactus.html">Contact Us</a>
+            </li>
+            <!-- <span class="nav-active"></span> -->
+          </ul>
+          <!-- End Navbar Right -->
+        </div>
+      </div>
+      <div class="pmd-sidebar-overlay"></div>
+    </nav>
+    <!-- Emd Navbar -->
+
+    <!----------------------------
+		Team members section 
+ 	----------------------------->
+    <div
+      id="team-members"
+      class="section text-center"
+      style="background-color: rgb(228, 224, 222)"
+    >
+      <div class="container">
+        <h2
+          class="section-title section-title-icon text-center"
+          style="padding-bottom: -40px"
+        >
+          <i
+            class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light"
+          >
+            <img
+              class="img-fluid lazyloaded"
+              src="assets/img/leaders.svg"
+              alt="ic_leaders"
+              data-was-processed="true"
+            />
+          </i>
+        </h2>
+
+        <!-- Members Detail -->
+        <div
+          tabindex="-1"
+          class="modal fade"
+          id="view-bio"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button
+                  aria-hidden="true"
+                  data-dismiss="modal"
+                  class="close"
+                  type="button"
+                >
+                  ×
+                </button>
+                <div class="member-informations">
+                  <div class="post-thumbnail pmd-z-depth">
+                    <img
+                      src="assets/img/praveenjavali.jpg"
+                      alt="Praveen Javali"
+                      class="img-responsive"
+                    />
+                  </div>
+                  <!-- .post-thumbnail -->
+                  <h2 class="pmd-card-title-text">Praveen Javali</h2>
+                  <div class="designation">Founder and Techno Evangelist</div>
+                  <a href="mailto:pjavali@jubilantsolutions.in" class=""
+                    >pjavali@jubilantsolutions.in</a
+                  >
+                </div>
+                <div class="member-biography text-left">
+                  <p>
+                    Praveen started his career in Marketing and then
+                    transforming himself into Software Engineer by working on
+                    large-scale enterprise products. Previously, Praveen was
+                    working in organisations like Ness Technologies, Valtech,
+                    Capgemini, IBM handling enterprise IT-Projects. Currently
+                    Praveen is working in the leadership role at Jubilant
+                    Solutions.
+                  </p>
+                  <p>
+                    His responsibilities include passing vision to all the
+                    stakeholders, putting right people at the right place and
+                    make sure making deliveries on right time and on every time.
+                  </p>
+                  <p>
+                    Working towards building a company where the right ideas
+                    grow.
+                  </p>
+                  <p>
+                    Praveen received his degree in Business Management from S D
+                    M College of Bussinees Mangement, Mangalore University and
+                    MBA (E-Business)from WeShool,Mumbai.
+                  </p>
+                  <p>
+                    Apart from building technology products and businesses,
+                    Praveen has an active interest in learning
+                    Painting,especially Watercolor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Members Detail -->
+
+        <!-------------------------- adding-->
+
+        <!----------------------------
+Team members section 
+----------------------------->
+        <div id="team-members" class="section text-center">
+          <div class="container text-center">
+            <h2 class="text-center">Team Members</h2>
+            <p class="lead text-center">
+              We are a team of<span><strong> </strong></span>
+              building usable software products for startups and companies. We
+              aspire to be the best in our craft of developing web and mobile
+              applications and building a successful business around it. We also
+              constantly work towards building a place where we love to work.
+            </p>
+
+            <!-- Members List-->
+            <div id="members" class="owl-carousel pmd-card-carousel">
+              <!-- Members Card-->
+              <div class="member-item">
+                <div class="pmd-card pmd-z-depth pmd-card-overlay">
+                  <!-- Card media -->
+                  <div class="pmd-card-media pmd-card-media-overlay">
+                    <a
+                      href="javascript:void(0)"
+                      class="btn pmd-btn-fab pmd-btn-flat pmd-btn-outline btn-default view-link"
+                      type="button"
+                      data-title="View Bio"
+                      data-target="#view-bio"
+                      data-toggle="modal"
+                      ><i class="material-icons pmd-sm">add</i></a
+                    >
+                    <a
+                      class="media-avatar"
+                      href="javascript:void(0)"
+                      title="tile"
+                    >
+                      <img
+                        src="assets/img/team-1.jpg"
+                        alt="Adam Abraham - Business Advisor"
+                      />
+                    </a>
+                  </div>
+                  <!-- Card header -->
+                  <div class="pmd-card-title">
+                    <h5 class="pmd-card-title-text">
+                      <a
+                        href="javascript:void(0)"
+                        title="Adam Abraham - Business Advisor"
+                        >Praveen Javali</a
+                      >
+                    </h5>
+                    <p class="pmd-card-subtitle-text">Business Advisor</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Members Card-->
+              <!-- Members Card-->
+              <div class="member-item">
+                <div class="pmd-card pmd-z-depth pmd-card-overlay">
+                  <!-- Card media -->
+                  <div class="pmd-card-media pmd-card-media-overlay">
+                    <a
+                      href="javascript:void(0)"
+                      class="btn pmd-btn-fab pmd-btn-flat pmd-btn-outline btn-default view-link"
+                      type="button"
+                      data-title="View Bio"
+                      data-target="#view-bio"
+                      data-toggle="modal"
+                      ><i class="material-icons pmd-sm">add</i></a
+                    >
+                    <a
+                      class="media-avatar"
+                      href="javascript:void(0)"
+                      title="Educational Advisor"
+                    >
+                      <img
+                        src="assets/img/praveenjavali.jpg"
+                        alt=" Bond - Educational Advisor"
+                      />
+                    </a>
+                  </div>
+                  <!-- Card header -->
+                  <div class="pmd-card-title">
+                    <h5 class="pmd-card-title-text">
+                      <a
+                        href="javascript:void(0)"
+                        title="Molly Bond - Educational Advisor"
+                        >Praveen Javali</a
+                      >
+                    </h5>
+                    <p class="pmd-card-subtitle-text">Educational Advisor</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Members Card-->
+              <!-- Members Card-->
+              <div class="member-item">
+                <div class="pmd-card pmd-z-depth pmd-card-overlay">
+                  <!-- Card media -->
+                  <div class="pmd-card-media pmd-card-media-overlay">
+                    <a
+                      href="javascript:void(0)"
+                      class="btn pmd-btn-fab pmd-btn-flat pmd-btn-outline btn-default view-link"
+                      type="button"
+                      data-title="View Bio"
+                      data-target="#view-bio"
+                      data-toggle="modal"
+                      ><i class="material-icons pmd-sm">add</i></a
+                    >
+                    <a
+                      class="media-avatar"
+                      href="javascript:void(0)"
+                      title="Financial Advisor"
+                    >
+                      <img
+                        src="assets/img/team-3.jpg"
+                        alt="Financial Advisor"
+                      />
+                    </a>
+                  </div>
+                  <!-- Card header -->
+                  <div class="pmd-card-title">
+                    <h5 class="pmd-card-title-text">
+                      <a href="javascript:void(0)" title=" Financial Advisor"
+                        >ABC</a
+                      >
+                    </h5>
+                    <p class="pmd-card-subtitle-text">Financial Advisor</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Members Card-->
+              <!-- Members Card-->
+              <div class="member-item">
+                <div class="pmd-card pmd-z-depth pmd-card-overlay">
+                  <!-- Card media -->
+                  <div class="pmd-card-media pmd-card-media-overlay">
+                    <a
+                      href="javascript:void(0)"
+                      class="btn pmd-btn-fab pmd-btn-flat pmd-btn-outline btn-default view-link"
+                      type="button"
+                      data-title="View Bio"
+                      data-target="#view-bio"
+                      data-toggle="modal"
+                      ><i class="material-icons pmd-sm">add</i></a
+                    >
+                    <a
+                      class="media-avatar"
+                      href="javascript:void(0)"
+                      title=" Director"
+                    >
+                      <img src="assets/img/team-4.jpg" alt="Director" />
+                    </a>
+                  </div>
+                  <!-- Card header -->
+                  <div class="pmd-card-title">
+                    <h5 class="pmd-card-title-text">
+                      <a href="javascript:void(0)" title="Director">Cat</a>
+                    </h5>
+                    <p class="pmd-card-subtitle-text">Director</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Members Card-->
+              <!-- Members Card-->
+              <div class="member-item">
+                <div class="pmd-card pmd-z-depth pmd-card-overlay">
+                  <!-- Card media -->
+                  <div class="pmd-card-media pmd-card-media-overlay">
+                    <a
+                      href="javascript:void(0)"
+                      class="btn pmd-btn-fab pmd-btn-flat pmd-btn-outline btn-default view-link"
+                      type="button"
+                      data-title="View Bio"
+                      data-target="#view-bio"
+                      data-toggle="modal"
+                      ><i class="material-icons pmd-sm">add</i></a
+                    >
+                    <a
+                      class="media-avatar"
+                      href="javascript:void(0)"
+                      title=" Co-Founder"
+                    >
+                      <img src="assets/img/team-5.jpg" alt=" - Co-Founder" />
+                    </a>
+                  </div>
+                  <!-- Card header -->
+                  <div class="pmd-card-title">
+                    <h5 class="pmd-card-title-text">
+                      <a
+                        href="javascript:void(0)"
+                        title="Emily Bower - Co-Founder"
+                        >Tiger</a
+                      >
+                    </h5>
+                    <p class="pmd-card-subtitle-text">Co-Founder</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Members Card-->
+              <!-- Members Card-->
+              <!-- End Members Card-->
+            </div>
+            <!-- End Members List-->
+          </div>
+        </div>
+        <!-- End Section Our Board Members -->
+        <!-- Members Detail -->
+        <div
+          tabindex="-1"
+          class="modal fade"
+          id="view-bio"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button
+                  aria-hidden="true"
+                  data-dismiss="modal"
+                  class="close"
+                  type="button"
+                >
+                  ×
+                </button>
+                <div class="member-informations">
+                  <div class="post-thumbnail pmd-z-depth">
+                    <img
+                      src="assets/img/team-1.jpg"
+                      alt="Jonson Root"
+                      class="img-responsive"
+                    />
+                  </div>
+                  <!-- .post-thumbnail -->
+                  <h2 class="pmd-card-title-text">ABC</h2>
+                  <div class="designation">Business Advisor</div>
+                  <a href="mailto:luckylin@propeller.in" class=""></a>
+                </div>
+                <div class="member-biography text-left">
+                  <p>
+                    Lucky Lin is a paralegal in Chicago, Illinois. Her interest
+                    in raising pregnancy awareness sparked when, in the summer
+                    of 2009, she learned of the passing of her niece less than a
+                    month before her due date. Soon after, Sarah began meeting
+                    with newfound friends and family who had suffered similar
+                    losses. Together with these friends and family.
+                  </p>
+                  <p>
+                    Sarah received her AA degree in Liberal Arts from Young
+                    Harris College in Young Harris, Georgia. She then attended
+                    Kennesaw State University in Kennesaw, Georgia, where she
+                    received her BA in History. Sarah returned to Kennesaw State
+                    University to receive her Paralegal Certificate and worked
+                    in Atlanta at various law firms. She then moved to New York
+                    City to work for American International Group, Inc. (AIG).
+                    At AIG, she worked in the Corporate Secretary’s office and
+                    was involved in the company’s not for profit projects,
+                    including the AIG Disaster Relief Fund.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Members Detail -->
+      </div>
+    </div>
+    <!-- End Section Our Board Members -->
+    <!-- Copyrights -->
+    <footer style="background-color: royalblue">
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <ul class="footer-menu list-inline">
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="site-info text-right">
+                <span class="crafted">&copy; 2020. Digi-Vista, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Copyrights -->
+
+    <!--Jquery-->
+
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+    <!--Bootstrap js-->
+    <script
+      type="text/javascript"
+      src="assets/css/bootstrap/js/bootstrap.min.js"
+    ></script>
+
+    <!--Propeller js-->
+    <script type="text/javascript" src="assets/js/propeller.min.js"></script>
+
+    <!--Owl Carousel js-->
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+    <!--Quantify custom js-->
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.loadie.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/quantify-global.js"></script>
+  </body>
+</html>
